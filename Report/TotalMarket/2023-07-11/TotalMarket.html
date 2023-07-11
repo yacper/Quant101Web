@@ -1,0 +1,3502 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim"
+        crossorigin="anonymous"></script>
+
+    <script src="../../../../3party/echarts.min.js"></script>
+    <!--
+    Display_PCT     作为pct显示
+    Display_Number  作为数字显示显示
+
+
+-->
+
+</head>
+
+<body>
+    <div class="container-fluid" style="display: flex; height: 1080px;flex-direction: column;flex-wrap: wrap;">
+        <div style="margin: 0px 0px;">
+            <div class="row" style="margin: 0px 0px;">
+            <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 160px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:60%">Rates</th>
+                        <th class="text-end" style="width:40%">Last</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Fed</td>
+                        <td class="text-end">5.25</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Ecb</td>
+                        <td class="text-end">4.0</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Boj</td>
+                        <td class="text-end">-0.1</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Boe</td>
+                        <td class="text-end">5.0</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Rba</td>
+                        <td class="text-end">4.1</td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Pboc</td>
+                        <td class="text-end">3.55</td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <div class="card" style="width: 680px;margin:0px 0px;padding:0px 0px;">
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="p-1 text-white fw-bold" style="background-color: black; " >Total Market</div>
+                    <h5 class="card-title" style="background-color: #ffc103; width:200px;">2023-07-11</h5>
+                    <!-- <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+                            content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div> -->
+                </div>
+
+            </div>
+
+            <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 840px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:20%">Yields</th>
+                        <th style="width:20%">Code</th>
+                        <th class="text-end" style="width:10%">Last</th>
+                        <th class="text-end" style="width:10%">Change%</th>
+                        <th class="text-end" style="width:10%">Week%</th>
+                        <th class="text-end" style="width:10%">Mon%</th>
+                        <th style="width:20%">Quater</th>
+                        <th class="text-end" style="width:10%">Year%</th>
+                        <th class="text-end" style="width:10%">Ytd%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>US01MY</td>
+                        <td class="fw-bold"><a href=https://www.marketwatch.com/investing/bond/tmubmusd01m>US01MY</a></td>
+                        <td class="text-end">5.34</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.38%</a></td>
+                        <td class="Display_PCT text-end">1.91%</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.33%</a>
+                        </td>
+                        <td id="US01MY_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/US01MY_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">292.65%</a>
+                        </td>
+                        <td class="Display_PCT text-end">29.61%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>US03MY</td>
+                        <td class="fw-bold"><a href=https://www.marketwatch.com/investing/bond/tmubmusd03m>US03MY</a></td>
+                        <td class="text-end">5.48</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.37%</a></td>
+                        <td class="Display_PCT text-end">0.92%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.11%</a>
+                        </td>
+                        <td id="US03MY_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/US03MY_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">188.42%</a>
+                        </td>
+                        <td class="Display_PCT text-end">23.98%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>US06MY</td>
+                        <td class="fw-bold"><a href=https://www.marketwatch.com/investing/bond/tmubmusd06m>US06MY</a></td>
+                        <td class="text-end">5.54</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.18%</a></td>
+                        <td class="Display_PCT text-end">1.28%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.03%</a>
+                        </td>
+                        <td id="US06MY_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/US06MY_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">111.45%</a>
+                        </td>
+                        <td class="Display_PCT text-end">16.39%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>US01Y</td>
+                        <td class="fw-bold"><a href=https://www.marketwatch.com/investing/bond/tmubmusd01y>US01Y</a></td>
+                        <td class="text-end">5.38</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.55%</a></td>
+                        <td class="Display_PCT text-end">-0.37%</a>
+                        </td>
+                        <td class="Display_PCT text-end">4.26%</a>
+                        </td>
+                        <td id="US01Y_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/US01Y_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">90.78%</a>
+                        </td>
+                        <td class="Display_PCT text-end">13.74%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>US02Y</td>
+                        <td class="fw-bold"><a href=https://www.marketwatch.com/investing/bond/tmubmusd02y>US02Y</a></td>
+                        <td class="text-end">4.85</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.82%</a></td>
+                        <td class="Display_PCT text-end">-0.41%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.36%</a>
+                        </td>
+                        <td id="US02Y_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/US02Y_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">63.30%</a>
+                        </td>
+                        <td class="Display_PCT text-end">9.98%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>US05Y</td>
+                        <td class="fw-bold"><a href=https://www.marketwatch.com/investing/bond/tmubmusd05y>US05Y</a></td>
+                        <td class="text-end">4.25</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.30%</a></td>
+                        <td class="Display_PCT text-end">2.91%</a>
+                        </td>
+                        <td class="Display_PCT text-end">8.14%</a>
+                        </td>
+                        <td id="US05Y_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/US05Y_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">43.58%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.52%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>US10Y</td>
+                        <td class="fw-bold"><a href=https://www.marketwatch.com/investing/bond/tmubmusd10y>US10Y</a></td>
+                        <td class="text-end">4.01</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.23%</a></td>
+                        <td class="Display_PCT text-end">5.25%</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.80%</a>
+                        </td>
+                        <td id="US10Y_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/US10Y_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">36.86%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.35%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>US30Y</td>
+                        <td class="fw-bold"><a href=https://www.marketwatch.com/investing/bond/tmubmusd30y>US30Y</a></td>
+                        <td class="text-end">4.05</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.00%</a></td>
+                        <td class="Display_PCT text-end">5.19%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.53%</a>
+                        </td>
+                        <td id="US30Y_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/US30Y_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">28.98%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.02%</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+            <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 840px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:20%">Forex</th>
+                        <th style="width:20%">Code</th>
+                        <th class="text-end" style="width:10%">Last</th>
+                        <th class="text-end" style="width:10%">Change%</th>
+                        <th class="text-end" style="width:10%">Week%</th>
+                        <th class="text-end" style="width:10%">Mon%</th>
+                        <th style="width:20%">Quater</th>
+                        <th class="text-end" style="width:10%">Year%</th>
+                        <th class="text-end" style="width:10%">Ytd%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>USDIndex</td>
+                        <td class="fw-bold"><a href=https://www.tradingview.com/chart/?symbol=TVC%3ADXY>USDIndex</a></td>
+                        <td class="text-end">101.75</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.21%</a></td>
+                        <td class="Display_PCT text-end">-1.20%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.54%</a>
+                        </td>
+                        <td id="USDIndex_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/USDIndex_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-5.80%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.71%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>EURUSD</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/EURUSD=X>EURUSD</a></td>
+                        <td class="text-end">1.1</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.42%</a></td>
+                        <td class="Display_PCT text-end">0.94%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.46%</a>
+                        </td>
+                        <td id="EURUSD_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/EURUSD_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">7.77%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.33%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>USDJPY</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/JPY=X>USDJPY</a></td>
+                        <td class="text-end">142.21</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.21%</a></td>
+                        <td class="Display_PCT text-end">-1.52%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.41%</a>
+                        </td>
+                        <td id="USDJPY_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/USDJPY_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">2.76%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.99%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>GBPUSD</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/GBPUSD=X>GBPUSD</a></td>
+                        <td class="text-end">1.29</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.45%</a></td>
+                        <td class="Display_PCT text-end">1.60%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.51%</a>
+                        </td>
+                        <td id="GBPUSD_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/GBPUSD_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">7.50%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.97%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>USDCAD</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/CAD=X>USDCAD</a></td>
+                        <td class="text-end">1.33</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.06%</a></td>
+                        <td class="Display_PCT text-end">0.17%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.50%</a>
+                        </td>
+                        <td id="USDCAD_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/USDCAD_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">3.05%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.08%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>USDSEK</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/SEK=X>USDSEK</a></td>
+                        <td class="text-end">10.7</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.18%</a></td>
+                        <td class="Display_PCT text-end">-1.28%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.11%</a>
+                        </td>
+                        <td id="USDSEK_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/USDSEK_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">4.97%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.39%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>USDCHF</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/CHF=X>USDCHF</a></td>
+                        <td class="text-end">0.88</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.84%</a></td>
+                        <td class="Display_PCT text-end">-1.60%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.41%</a>
+                        </td>
+                        <td id="USDCHF_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/USDCHF_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-8.77%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-4.49%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>AUDUSD</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/AUDUSD=X>AUDUSD</a></td>
+                        <td class="text-end">0.67</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.16%</a></td>
+                        <td class="Display_PCT text-end">0.05%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.00%</a>
+                        </td>
+                        <td id="AUDUSD_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/AUDUSD_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-3.55%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.31%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>USDCNY</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/CNY=X>USDCNY</a></td>
+                        <td class="text-end">7.2</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.15%</a></td>
+                        <td class="Display_PCT text-end">-0.54%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.02%</a>
+                        </td>
+                        <td id="USDCNY_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/USDCNY_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">6.43%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.41%</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 840px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:20%">Energy</th>
+                        <th style="width:20%">Code</th>
+                        <th class="text-end" style="width:10%">Last</th>
+                        <th class="text-end" style="width:10%">Change%</th>
+                        <th class="text-end" style="width:10%">Week%</th>
+                        <th class="text-end" style="width:10%">Mon%</th>
+                        <th style="width:20%">Quater</th>
+                        <th class="text-end" style="width:10%">Year%</th>
+                        <th class="text-end" style="width:10%">Ytd%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Crude Oil</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/CL=F>CL</a></td>
+                        <td class="text-end">73.54</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.43%</a></td>
+                        <td class="Display_PCT text-end">4.11%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.39%</a>
+                        </td>
+                        <td id="CL_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/CL_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-29.82%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-8.37%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Brent</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/BZ=F>BZ</a></td>
+                        <td class="text-end">78.2</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.34%</a></td>
+                        <td class="Display_PCT text-end">4.41%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.62%</a>
+                        </td>
+                        <td id="BZ_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/BZ_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-26.93%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-8.97%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Natural Gas</td>
+                        <td class="fw-bold"><a href=https://www.tradingview.com/chart/?symbol=NYMEX%3ANG1%21>NG</a></td>
+                        <td class="text-end">2.665</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.21%</a></td>
+                        <td class="Display_PCT text-end">-4.75%</a>
+                        </td>
+                        <td class="Display_PCT text-end">14.43%</a>
+                        </td>
+                        <td id="NG_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/NG_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-55.83%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-40.45%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>RBOB Gasoline</td>
+                        <td class="fw-bold"><a href=https://www.tradingview.com/chart/?symbol=NYMEX%3ARB1%21>RB</a></td>
+                        <td class="text-end">3654.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.46%</a></td>
+                        <td class="Display_PCT text-end">-3.00%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.91%</a>
+                        </td>
+                        <td id="RB_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/RB_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-14.51%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-10.99%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Heating Oil</td>
+                        <td class="fw-bold"><a href=https://www.tradingview.com/chart/?symbol=NYMEX%3AHO1%21>HO</a></td>
+                        <td class="text-end">2.5595</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.02%</a></td>
+                        <td class="Display_PCT text-end">4.55%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.57%</a>
+                        </td>
+                        <td id="HO_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/HO_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-30.31%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-23.87%</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+            <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 840px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:20%">Precious</th>
+                        <th style="width:20%">Code</th>
+                        <th class="text-end" style="width:10%">Last</th>
+                        <th class="text-end" style="width:10%">Change%</th>
+                        <th class="text-end" style="width:10%">Week%</th>
+                        <th class="text-end" style="width:10%">Mon%</th>
+                        <th style="width:20%">Quater</th>
+                        <th class="text-end" style="width:10%">Year%</th>
+                        <th class="text-end" style="width:10%">Ytd%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Gold</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/GC=F>GC</a></td>
+                        <td class="text-end">1941.4</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.79%</a></td>
+                        <td class="Display_PCT text-end">1.06%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.07%</a>
+                        </td>
+                        <td id="GC_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/GC_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">11.54%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.69%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Silver</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/SI=F>SI</a></td>
+                        <td class="text-end">13330.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.83%</a></td>
+                        <td class="Display_PCT text-end">-0.37%</a>
+                        </td>
+                        <td class="Display_PCT text-end">4.92%</a>
+                        </td>
+                        <td id="SI_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SI_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-27.20%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-25.51%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Platinum</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/PL=F>PL</a></td>
+                        <td class="text-end">939.2</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.20%</a></td>
+                        <td class="Display_PCT text-end">3.84%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-9.05%</a>
+                        </td>
+                        <td id="PL_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/PL_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">5.06%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-12.53%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Palladium</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/PA=F>PA</a></td>
+                        <td class="text-end">1235.5</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.08%</a></td>
+                        <td class="Display_PCT text-end">1.82%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-9.99%</a>
+                        </td>
+                        <td id="PA_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/PA_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-37.83%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-30.95%</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+            <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 840px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:20%">Metal</th>
+                        <th style="width:20%">Code</th>
+                        <th class="text-end" style="width:10%">Last</th>
+                        <th class="text-end" style="width:10%">Change%</th>
+                        <th class="text-end" style="width:10%">Week%</th>
+                        <th class="text-end" style="width:10%">Mon%</th>
+                        <th style="width:20%">Quater</th>
+                        <th class="text-end" style="width:10%">Year%</th>
+                        <th class="text-end" style="width:10%">Ytd%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Copper</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/HG=F>HG</a></td>
+                        <td class="text-end">3.799</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.85%</a></td>
+                        <td class="Display_PCT text-end">1.55%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.19%</a>
+                        </td>
+                        <td id="HG_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/HG_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">7.56%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.17%</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+            <!-- 农产品 -->
+            <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 840px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:20%">Agriculture</th>
+                        <th style="width:20%">Code</th>
+                        <th class="text-end" style="width:10%">Last</th>
+                        <th class="text-end" style="width:10%">Change%</th>
+                        <th class="text-end" style="width:10%">Week%</th>
+                        <th class="text-end" style="width:10%">Mon%</th>
+                        <th style="width:20%">Quater</th>
+                        <th class="text-end" style="width:10%">Year%</th>
+                        <th class="text-end" style="width:10%">Ytd%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Corn</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/ZC=F>ZC</a></td>
+                        <td class="text-end">504.25</a>
+                        </td>
+                        <td class="Display_PCT text-end">-10.04%</a></td>
+                        <td class="Display_PCT text-end">-9.06%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-16.55%</a>
+                        </td>
+                        <td id="ZC_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/ZC_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-32.50%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-25.68%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Soybeans</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/ZS=F>ZS</a></td>
+                        <td class="text-end">1359.5</a>
+                        </td>
+                        <td class="Display_PCT text-end">-8.48%</a></td>
+                        <td class="Display_PCT text-end">-12.70%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.09%</a>
+                        </td>
+                        <td id="ZS_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/ZS_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-14.56%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-10.52%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Soybean Oil</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/ZL=F>ZL</a></td>
+                        <td class="text-end">60.43</a>
+                        </td>
+                        <td class="Display_PCT text-end">-9.20%</a></td>
+                        <td class="Display_PCT text-end">-7.05%</a>
+                        </td>
+                        <td class="Display_PCT text-end">19.73%</a>
+                        </td>
+                        <td id="ZL_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/ZL_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-4.34%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-5.30%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Soybean Meal</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/ZM=F>ZM</a></td>
+                        <td class="text-end">395.1</a>
+                        </td>
+                        <td class="Display_PCT text-end">-3.54%</a></td>
+                        <td class="Display_PCT text-end">-5.75%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.49%</a>
+                        </td>
+                        <td id="ZM_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/ZM_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-15.94%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-17.43%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Wheat</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/ZW=F>ZW</a></td>
+                        <td class="text-end">654.75</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.38%</a></td>
+                        <td class="Display_PCT text-end">2.91%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.16%</a>
+                        </td>
+                        <td id="ZW_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/ZW_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-20.59%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-17.33%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Oats</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/ZO=F>ZO</a></td>
+                        <td class="text-end">444.75</a>
+                        </td>
+                        <td class="Display_PCT text-end">9.48%</a></td>
+                        <td class="Display_PCT text-end">17.89%</a>
+                        </td>
+                        <td class="Display_PCT text-end">29.19%</a>
+                        </td>
+                        <td id="ZO_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/ZO_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-32.66%</a>
+                        </td>
+                        <td class="Display_PCT text-end">21.10%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Live Cattle</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/LE=F>LE</a></td>
+                        <td class="text-end">177.15</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.08%</a></td>
+                        <td class="Display_PCT text-end">-2.40%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.03%</a>
+                        </td>
+                        <td id="LE_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/LE_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">31.66%</a>
+                        </td>
+                        <td class="Display_PCT text-end">14.42%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Lean Hogs</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/HE=F>HE</a></td>
+                        <td class="text-end">94.3</a>
+                        </td>
+                        <td class="Display_PCT text-end">-4.75%</a></td>
+                        <td class="Display_PCT text-end">-1.41%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.53%</a>
+                        </td>
+                        <td id="HE_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/HE_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-16.73%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.53%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Cocoa</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/CC=F>CC</a></td>
+                        <td class="text-end">3322.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.47%</a></td>
+                        <td class="Display_PCT text-end">0.12%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.06%</a>
+                        </td>
+                        <td id="CC_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/CC_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">46.41%</a>
+                        </td>
+                        <td class="Display_PCT text-end">27.77%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Cotton </td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/CT=F>CT</a></td>
+                        <td class="text-end">80.42</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.96%</a></td>
+                        <td class="Display_PCT text-end">-2.92%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-5.40%</a>
+                        </td>
+                        <td id="CT_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/CT_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-21.63%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-3.54%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Coffee </td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/KC=F>KC</a></td>
+                        <td class="text-end">160.35</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.50%</a></td>
+                        <td class="Display_PCT text-end">-0.40%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-13.51%</a>
+                        </td>
+                        <td id="KC_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/KC_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-28.06%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-4.15%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Sugar</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/SB=F>SB</a></td>
+                        <td class="text-end">23.24</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.23%</a></td>
+                        <td class="Display_PCT text-end">1.53%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-5.14%</a>
+                        </td>
+                        <td id="SB_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SB_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">22.19%</a>
+                        </td>
+                        <td class="Display_PCT text-end">15.97%</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+        </div>
+
+        <div style="margin: 0px 0px;">
+        
+
+            <!-- 中国期货 -->
+            <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 840px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:20%">中国期货</th>
+                        <th style="width:20%">Code</th>
+                        <th class="text-end" style="width:10%">Last</th>
+                        <th class="text-end" style="width:10%">Change%</th>
+                        <th class="text-end" style="width:10%">Week%</th>
+                        <th class="text-end" style="width:10%">Mon%</th>
+                        <th style="width:20%">Quater</th>
+                        <th class="text-end" style="width:10%">Year%</th>
+                        <th class="text-end" style="width:10%">Ytd%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr >
+                        <td>铁矿石</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/I0.shtml>I</a></td>
+                        <td class="text-end">795.5</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.09%</a></td>
+                        <td class="Display_PCT text-end">-2.87%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.31%</a>
+                        </td>
+                        <td id="I_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/I_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">2.65%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-7.82%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr >
+                        <td>螺纹钢</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/RB0.shtml>RB</a></td>
+                        <td class="text-end">3654.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.46%</a></td>
+                        <td class="Display_PCT text-end">-3.00%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.91%</a>
+                        </td>
+                        <td id="RB_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/RB_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-14.51%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-10.99%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr >
+                        <td>热卷</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/HC0.shtml>HC</a></td>
+                        <td class="text-end">3782.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.67%</a></td>
+                        <td class="Display_PCT text-end">-2.17%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.85%</a>
+                        </td>
+                        <td id="HC_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/HC_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-14.03%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-8.71%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr >
+                        <td>不锈钢</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/SC0.shtml>SC</a></td>
+                        <td class="text-end">567.2</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.14%</a></td>
+                        <td class="Display_PCT text-end">3.01%</a>
+                        </td>
+                        <td class="Display_PCT text-end">8.31%</a>
+                        </td>
+                        <td id="SC_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SC_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-19.03%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.78%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr >
+                        <td>硅铁</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/SF0.shtml>SF</a></td>
+                        <td class="text-end">6960.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.20%</a></td>
+                        <td class="Display_PCT text-end">-1.19%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.75%</a>
+                        </td>
+                        <td id="SF_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SF_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-18.31%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-17.98%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr >
+                        <td>锰硅</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/SM0.shtml>SM</a></td>
+                        <td class="text-end">6574.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.18%</a></td>
+                        <td class="Display_PCT text-end">-0.54%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.61%</a>
+                        </td>
+                        <td id="SM_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SM_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-17.43%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-14.45%</a>
+                        </td>
+                    </tr>
+                    
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>沪铜</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/CU0.shtml>CU</a></td>
+                        <td class="text-end">68130.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.56%</a></td>
+                        <td class="Display_PCT text-end">0.03%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.21%</a>
+                        </td>
+                        <td id="CU_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/CU_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">4.99%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.82%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>沪铝</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/AL0.shtml>AL</a></td>
+                        <td class="text-end">18140.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.83%</a></td>
+                        <td class="Display_PCT text-end">0.89%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.44%</a>
+                        </td>
+                        <td id="AL_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/AL_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-6.71%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.99%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>沪锌</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/ZN0.shtml>ZN</a></td>
+                        <td class="text-end">20220.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.43%</a></td>
+                        <td class="Display_PCT text-end">0.67%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.38%</a>
+                        </td>
+                        <td id="ZN_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/ZN_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-16.62%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-14.92%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>沪铅</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/PB0.shtml>PB</a></td>
+                        <td class="text-end">15560.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.32%</a></td>
+                        <td class="Display_PCT text-end">0.26%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.60%</a>
+                        </td>
+                        <td id="PB_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/PB_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">2.07%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.29%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>沪镍</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/NI0.shtml>NI</a></td>
+                        <td class="text-end">164020.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.86%</a></td>
+                        <td class="Display_PCT text-end">2.83%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.17%</a>
+                        </td>
+                        <td id="NI_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/NI_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-9.69%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-29.30%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>沪锡</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/SN0.shtml>SN</a></td>
+                        <td class="text-end">229970.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.19%</a></td>
+                        <td class="Display_PCT text-end">2.79%</a>
+                        </td>
+                        <td class="Display_PCT text-end">10.30%</a>
+                        </td>
+                        <td id="SN_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SN_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">7.15%</a>
+                        </td>
+                        <td class="Display_PCT text-end">8.53%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>工业硅</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/SI0.shtml>SI</a></td>
+                        <td class="text-end">13330.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.83%</a></td>
+                        <td class="Display_PCT text-end">-0.37%</a>
+                        </td>
+                        <td class="Display_PCT text-end">4.92%</a>
+                        </td>
+                        <td id="SI_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SI_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-27.20%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-25.51%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>氧化铝</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/AO0.shtml>AO</a></td>
+                        <td class="text-end">2819.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.00%</a></td>
+                        <td class="Display_PCT text-end">0.11%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.60%</a>
+                        </td>
+                        <td id="AO_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/AO_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">3.60%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.60%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>豆油</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/Y0.shtml>Y</a></td>
+                        <td class="text-end">8028.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.00%</a></td>
+                        <td class="Display_PCT text-end">-0.82%</a>
+                        </td>
+                        <td class="Display_PCT text-end">14.59%</a>
+                        </td>
+                        <td id="Y_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/Y_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-22.61%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-9.80%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>菜油</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/OI0.shtml>OI</a></td>
+                        <td class="text-end">9365.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.08%</a></td>
+                        <td class="Display_PCT text-end">0.59%</a>
+                        </td>
+                        <td class="Display_PCT text-end">21.84%</a>
+                        </td>
+                        <td id="OI_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/OI_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-20.80%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-12.79%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>棕榈油</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/P0.shtml>P</a></td>
+                        <td class="text-end">7516.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.78%</a></td>
+                        <td class="Display_PCT text-end">-2.64%</a>
+                        </td>
+                        <td class="Display_PCT text-end">15.99%</a>
+                        </td>
+                        <td id="P_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/P_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-19.51%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-9.86%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>豆粕</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/M0.shtml>M</a></td>
+                        <td class="text-end">3994.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.48%</a></td>
+                        <td class="Display_PCT text-end">0.43%</a>
+                        </td>
+                        <td class="Display_PCT text-end">14.74%</a>
+                        </td>
+                        <td id="M_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/M_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">2.49%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.47%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>菜粕</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/RM0.shtml>RM</a></td>
+                        <td class="text-end">3637.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.55%</a></td>
+                        <td class="Display_PCT text-end">3.24%</a>
+                        </td>
+                        <td class="Display_PCT text-end">23.20%</a>
+                        </td>
+                        <td id="RM_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/RM_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">28.15%</a>
+                        </td>
+                        <td class="Display_PCT text-end">12.85%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>玉米</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/C0.shtml>C</a></td>
+                        <td class="text-end">2755.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.86%</a></td>
+                        <td class="Display_PCT text-end">0.25%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.96%</a>
+                        </td>
+                        <td id="C_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/C_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-2.13%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.44%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>淀粉</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/CS0.shtml>CS</a></td>
+                        <td class="text-end">3167.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.60%</a></td>
+                        <td class="Display_PCT text-end">1.05%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.57%</a>
+                        </td>
+                        <td id="CS_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/CS_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-0.22%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.76%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>鸡蛋</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/JD0.shtml>JD</a></td>
+                        <td class="text-end">4221.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.73%</a></td>
+                        <td class="Display_PCT text-end">0.02%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.88%</a>
+                        </td>
+                        <td id="JD_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/JD_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-7.78%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.43%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>棉花</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/CF0.shtml>CF</a></td>
+                        <td class="text-end">16665.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.09%</a></td>
+                        <td class="Display_PCT text-end">-0.71%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.89%</a>
+                        </td>
+                        <td id="CF_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/CF_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-2.80%</a>
+                        </td>
+                        <td class="Display_PCT text-end">16.87%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>苹果</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/AP0.shtml>AP</a></td>
+                        <td class="text-end">8506.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.87%</a></td>
+                        <td class="Display_PCT text-end">-1.07%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.22%</a>
+                        </td>
+                        <td id="AP_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/AP_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-4.87%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.94%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>红枣</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/CJ0.shtml>CJ</a></td>
+                        <td class="text-end">10575.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.14%</a></td>
+                        <td class="Display_PCT text-end">1.54%</a>
+                        </td>
+                        <td class="Display_PCT text-end">4.70%</a>
+                        </td>
+                        <td id="CJ_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/CJ_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-6.21%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.78%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>花生</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/PK0.shtml>PK</a></td>
+                        <td class="text-end">10090.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.14%</a></td>
+                        <td class="Display_PCT text-end">-0.06%</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.88%</a>
+                        </td>
+                        <td id="PK_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/PK_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">2.58%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.04%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>生猪</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/LH0.shtml>LH</a></td>
+                        <td class="text-end">15255.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.07%</a></td>
+                        <td class="Display_PCT text-end">-3.14%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-4.18%</a>
+                        </td>
+                        <td id="LH_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/LH_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-25.64%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-5.51%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>白糖</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/SR0.shtml>SR</a></td>
+                        <td class="text-end">6738.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.07%</a></td>
+                        <td class="Display_PCT text-end">-1.38%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.72%</a>
+                        </td>
+                        <td id="SR_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SR_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">15.08%</a>
+                        </td>
+                        <td class="Display_PCT text-end">16.51%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>橡胶</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/RU0.shtml>RU</a></td>
+                        <td class="text-end">12340.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.00%</a></td>
+                        <td class="Display_PCT text-end">2.28%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.73%</a>
+                        </td>
+                        <td id="RU_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/RU_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-4.56%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.80%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>纸浆</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/SP0.shtml>SP</a></td>
+                        <td class="text-end">5344.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.02%</a></td>
+                        <td class="Display_PCT text-end">1.56%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.44%</a>
+                        </td>
+                        <td id="SP_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SP_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-20.97%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-20.55%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>纯碱</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/SA0.shtml>SA</a></td>
+                        <td class="text-end">1728.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.89%</a></td>
+                        <td class="Display_PCT text-end">2.25%</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.75%</a>
+                        </td>
+                        <td id="SA_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SA_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-37.28%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-36.93%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>玻璃</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/FG0.shtml>FG</a></td>
+                        <td class="text-end">1623.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.33%</a></td>
+                        <td class="Display_PCT text-end">3.91%</a>
+                        </td>
+                        <td class="Display_PCT text-end">4.37%</a>
+                        </td>
+                        <td id="FG_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/FG_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-1.99%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.23%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>甲醇</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/MA0.shtml>MA</a></td>
+                        <td class="text-end">2240.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.94%</a></td>
+                        <td class="Display_PCT text-end">3.99%</a>
+                        </td>
+                        <td class="Display_PCT text-end">9.75%</a>
+                        </td>
+                        <td id="MA_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/MA_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-14.93%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-15.57%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PVC</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/V0.shtml>V</a></td>
+                        <td class="text-end">5870.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.44%</a></td>
+                        <td class="Display_PCT text-end">0.88%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.80%</a>
+                        </td>
+                        <td id="V_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/V_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-19.20%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-6.27%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>尿素</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/UR0.shtml>UR</a></td>
+                        <td class="text-end">1987.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.60%</a></td>
+                        <td class="Display_PCT text-end">6.26%</a>
+                        </td>
+                        <td class="Display_PCT text-end">18.84%</a>
+                        </td>
+                        <td id="UR_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/UR_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-25.83%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-21.89%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>PTA</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/TA0.shtml>TA</a></td>
+                        <td class="text-end">5848.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.56%</a></td>
+                        <td class="Display_PCT text-end">4.62%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.18%</a>
+                        </td>
+                        <td id="TA_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/TA_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-12.95%</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.56%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>塑料</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/I0.shtml>I</a></td>
+                        <td class="text-end">795.5</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.09%</a></td>
+                        <td class="Display_PCT text-end">-2.87%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.31%</a>
+                        </td>
+                        <td id="I_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/I_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">2.65%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-7.82%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>聚丙烯</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/PP0.shtml>PP</a></td>
+                        <td class="text-end">7126.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.28%</a></td>
+                        <td class="Display_PCT text-end">0.82%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.38%</a>
+                        </td>
+                        <td id="PP_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/PP_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-15.56%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-8.93%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>苯乙烯</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/EB0.shtml>EB</a></td>
+                        <td class="text-end">7526.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.36%</a></td>
+                        <td class="Display_PCT text-end">2.86%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.21%</a>
+                        </td>
+                        <td id="EB_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/EB_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-25.99%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-10.99%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>乙二醇</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/EG0.shtml>EG</a></td>
+                        <td class="text-end">4039.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.02%</a></td>
+                        <td class="Display_PCT text-end">2.07%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.52%</a>
+                        </td>
+                        <td id="EG_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/EG_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-9.86%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-3.60%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>焦煤</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/JM0.shtml>JM</a></td>
+                        <td class="text-end">1360.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.30%</a></td>
+                        <td class="Display_PCT text-end">3.34%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.26%</a>
+                        </td>
+                        <td id="JM_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/JM_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-45.94%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-27.06%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>焦炭</td>
+                        <td class="fw-bold"><a href=https://finance.sina.com.cn/futures/quotes/J0.shtml>J</a></td>
+                        <td class="text-end">2076.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.31%</a></td>
+                        <td class="Display_PCT text-end">-1.14%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.44%</a>
+                        </td>
+                        <td id="J_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/J_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-33.42%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-22.25%</a>
+                        </td>
+                    </tr>
+                    
+
+
+
+                </tbody>
+            </table>
+            
+
+        </div>
+
+
+        <div style="margin: 0px 0px;">
+            <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 840px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:20%">US</th>
+                        <th style="width:20%">Code</th>
+                        <th class="text-end" style="width:10%">Last</th>
+                        <th class="text-end" style="width:10%">Change%</th>
+                        <th class="text-end" style="width:10%">Week%</th>
+                        <th class="text-end" style="width:10%">Mon%</th>
+                        <th style="width:20%">Quater</th>
+                        <th class="text-end" style="width:10%">Year%</th>
+                        <th class="text-end" style="width:10%">Ytd%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Total Market</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/VTI>VTI</a></td>
+                        <td class="text-end">218.99</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.44%</a></td>
+                        <td class="Display_PCT text-end">-0.59%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.35%</a>
+                        </td>
+                        <td id="VTI_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/VTI_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">14.31%</a>
+                        </td>
+                        <td class="Display_PCT text-end">15.44%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>FANG+</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/FNG=F>FNG</a></td>
+                        <td class="text-end">7752.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.91%</a></td>
+                        <td class="Display_PCT text-end">-1.04%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.90%</a>
+                        </td>
+                        <td id="FNG_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/FNG_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">53.53%</a>
+                        </td>
+                        <td class="Display_PCT text-end">72.61%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>DJI 30</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/^DJI>DJI</a></td>
+                        <td class="text-end">33944.4</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.62%</a></td>
+                        <td class="Display_PCT text-end">-1.35%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.83%</a>
+                        </td>
+                        <td id="DJI_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/DJI_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">8.16%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.40%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Nasdaq 100</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/^NDX>NDX</a></td>
+                        <td class="text-end">15045.64</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.06%</a></td>
+                        <td class="Display_PCT text-end">-0.88%</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.19%</a>
+                        </td>
+                        <td id="NDX_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/NDX_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">24.25%</a>
+                        </td>
+                        <td class="Display_PCT text-end">37.53%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>S&P 100</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/OEF>OEF</a></td>
+                        <td class="text-end">204.54</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.20%</a></td>
+                        <td class="Display_PCT text-end">-1.22%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.24%</a>
+                        </td>
+                        <td id="OEF_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/OEF_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">16.38%</a>
+                        </td>
+                        <td class="Display_PCT text-end">20.71%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>S&P 500</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/^SPX>SPX</a></td>
+                        <td class="text-end">4409.53</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.24%</a></td>
+                        <td class="Display_PCT text-end">-0.92%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.33%</a>
+                        </td>
+                        <td id="SPX_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SPX_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">12.99%</a>
+                        </td>
+                        <td class="Display_PCT text-end">14.85%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Russel 2000</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/^RUT>RUT</a></td>
+                        <td class="text-end">1895.25</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.64%</a></td>
+                        <td class="Display_PCT text-end">0.35%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.36%</a>
+                        </td>
+                        <td id="RUT_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/RUT_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">7.10%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.61%</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+            <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 840px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:20%">EU</th>
+                        <th style="width:20%">Code</th>
+                        <th class="text-end" style="width:10%">Last</th>
+                        <th class="text-end" style="width:10%">Change%</th>
+                        <th class="text-end" style="width:10%">Week%</th>
+                        <th class="text-end" style="width:10%">Mon%</th>
+                        <th style="width:20%">Quater</th>
+                        <th class="text-end" style="width:10%">Year%</th>
+                        <th class="text-end" style="width:10%">Ytd%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>FTSE 100</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/^FTSE>FTSE</a></td>
+                        <td class="text-end">7268.74</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.07%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-3.34%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-3.99%</a>
+                        </td>
+                        <td id="FTSE_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/FTSE_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">1.01%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.46%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>DAX 30</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/^GDAXI>DAX</a></td>
+                        <td class="text-end">15681.67</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.05%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.23%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.59%</a>
+                        </td>
+                        <td id="DAX_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/DAX_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">21.00%</a>
+                        </td>
+                        <td class="Display_PCT text-end">12.63%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>CAC40</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/^FCHI>CAC40</a></td>
+                        <td class="text-end">7180.45</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.51%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.57%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.96%</a>
+                        </td>
+                        <td id="CAC40_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/CAC40_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">17.87%</a>
+                        </td>
+                        <td class="Display_PCT text-end">10.92%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>EUR 50</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/^STOXX50E>EURO50</a></td>
+                        <td class="text-end">4263.27</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.16%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.91%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.23%</a>
+                        </td>
+                        <td id="EURO50_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/EURO50_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">22.26%</a>
+                        </td>
+                        <td class="Display_PCT text-end">12.38%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>EUR 100</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/^N100>EURO100</a></td>
+                        <td class="text-end">1341.89</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.30%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.48%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.64%</a>
+                        </td>
+                        <td id="EURO100_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/EURO100_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">13.27%</a>
+                        </td>
+                        <td class="Display_PCT text-end">8.96%</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+            <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 840px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:20%">Asia Pasific</th>
+                        <th style="width:20%">Code</th>
+                        <th class="text-end" style="width:10%">Last</th>
+                        <th class="text-end" style="width:10%">Change%</th>
+                        <th class="text-end" style="width:10%">Week%</th>
+                        <th class="text-end" style="width:10%">Mon%</th>
+                        <th style="width:20%">Quater</th>
+                        <th class="text-end" style="width:10%">Year%</th>
+                        <th class="text-end" style="width:10%">Ytd%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Nikkei 225</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/^N225>N225</a></td>
+                        <td class="text-end">32203.57</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.04%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-3.65%</a></td>
+                        <td class="Display_PCT text-end">-0.71%</a></td>
+                        <td id="N225_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/N225_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">24.17%</a></td>
+                        <td class="Display_PCT text-end">23.41%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>HANG SENG</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/^HSI>HSI</a></td>
+                        <td class="text-end">18659.83</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.97%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-3.89%</a></td>
+                        <td class="Display_PCT text-end">-3.77%</a></td>
+                        <td id="HSI_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/HSI_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-14.52%</a></td>
+                        <td class="Display_PCT text-end">-5.67%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>SSE Composite</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/000001.SS>000001.SS</a></td>
+                        <td class="text-end">3221.37</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.55%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.74%</a></td>
+                        <td class="Display_PCT text-end">0.24%</a></td>
+                        <td id="000001.SS_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/000001.SS_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-5.51%</a></td>
+                        <td class="Display_PCT text-end">4.28%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Shenzhen Index</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/399001.SZ>399001.SZ</a></td>
+                        <td class="text-end">11028.68</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.78%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.91%</a></td>
+                        <td class="Display_PCT text-end">2.85%</a></td>
+                        <td id="399001.SZ_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/399001.SZ_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-15.05%</a></td>
+                        <td class="Display_PCT text-end">0.12%</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+            <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 840px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:20%">Factors</th>
+                        <th style="width:20%">Code</th>
+                        <th class="text-end" style="width:10%">Last</th>
+                        <th class="text-end" style="width:10%">Change%</th>
+                        <th class="text-end" style="width:10%">Week%</th>
+                        <th class="text-end" style="width:10%">Mon%</th>
+                        <th style="width:20%">Quater</th>
+                        <th class="text-end" style="width:10%">Year%</th>
+                        <th class="text-end" style="width:10%">Ytd%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Momentum</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/MTUM>MTUM</a></td>
+                        <td class="text-end">142.91</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.10%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.93%</a></td>
+                        <td class="Display_PCT text-end">4.77%</a></td>
+                        <td id="MTUM_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/MTUM_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">6.39%</a></td>
+                        <td class="Display_PCT text-end">-1.10%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Value</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/VLUE>VLUE</a></td>
+                        <td class="text-end">93.83</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.75%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.04%</a></td>
+                        <td class="Display_PCT text-end">2.17%</a></td>
+                        <td id="VLUE_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/VLUE_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">5.18%</a></td>
+                        <td class="Display_PCT text-end">4.52%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Quality</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/QUAL>QUAL</a></td>
+                        <td class="text-end">133.75</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.65%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.83%</a></td>
+                        <td class="Display_PCT text-end">4.00%</a></td>
+                        <td id="QUAL_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/QUAL_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">17.38%</a></td>
+                        <td class="Display_PCT text-end">18.08%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Low Volatility</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/USMV>USMV</a></td>
+                        <td class="text-end">73.62</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.42%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.96%</a></td>
+                        <td class="Display_PCT text-end">2.41%</a></td>
+                        <td id="USMV_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/USMV_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">4.69%</a></td>
+                        <td class="Display_PCT text-end">2.98%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Russel 1000 Growth</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/IWF>IWF</a></td>
+                        <td class="text-end">272.48</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.09%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.98%</a></td>
+                        <td class="Display_PCT text-end">4.55%</a></td>
+                        <td id="IWF_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/IWF_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">19.96%</a></td>
+                        <td class="Display_PCT text-end">27.65%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Russel 1000 Value</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/IWD>IWD</a></td>
+                        <td class="text-end">157.18</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.67%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.41%</a></td>
+                        <td class="Display_PCT text-end">2.30%</a></td>
+                        <td id="IWD_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/IWD_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">8.82%</a></td>
+                        <td class="Display_PCT text-end">4.62%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>S&P 500 Growth</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/IVW>IVW</a></td>
+                        <td class="text-end">69.56</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.03%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.31%</a></td>
+                        <td class="Display_PCT text-end">3.53%</a></td>
+                        <td id="IVW_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/IVW_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">10.91%</a></td>
+                        <td class="Display_PCT text-end">19.53%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>S&P 500 Value</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/IVE>IVE</a></td>
+                        <td class="text-end">160.71</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.57%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.30%</a></td>
+                        <td class="Display_PCT text-end">3.34%</a></td>
+                        <td id="IVE_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/IVE_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">17.74%</a></td>
+                        <td class="Display_PCT text-end">11.70%</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+        <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 840px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:20%">Thematic</th>
+                        <th style="width:20%">Code</th>
+                        <th class="text-end" style="width:10%">Last</th>
+                        <th class="text-end" style="width:10%">Change%</th>
+                        <th class="text-end" style="width:10%">Week%</th>
+                        <th class="text-end" style="width:10%">Mon%</th>
+                        <th style="width:20%">Quater</th>
+                        <th class="text-end" style="width:10%">Year%</th>
+                        <th class="text-end" style="width:10%">Ytd%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Wide Moat</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/MOAT>MOAT</a></td>
+                        <td class="text-end">79.23</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.90%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.70%</a></td>
+                        <td class="Display_PCT text-end">3.15%</a></td>
+                        <td id="MOAT_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/MOAT_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">21.09%</a></td>
+                        <td class="Display_PCT text-end">22.06%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>CANSLIM</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/FFTY>FFTY</a></td>
+                        <td class="text-end">25.58</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.77%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.00%</a></td>
+                        <td class="Display_PCT text-end">6.49%</a></td>
+                        <td id="FFTY_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/FFTY_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-3.52%</a></td>
+                        <td class="Display_PCT text-end">17.23%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Online Retail</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/IBUY>IBUY</a></td>
+                        <td class="text-end">47.21</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.93%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.14%</a></td>
+                        <td class="Display_PCT text-end">9.33%</a></td>
+                        <td id="IBUY_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/IBUY_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">2.79%</a></td>
+                        <td class="Display_PCT text-end">21.08%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Cyber Security</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/HACK>HACK</a></td>
+                        <td class="text-end">50.44</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.63%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.28%</a></td>
+                        <td class="Display_PCT text-end">3.98%</a></td>
+                        <td id="HACK_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/HACK_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">3.97%</a></td>
+                        <td class="Display_PCT text-end">14.57%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Cloud</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/SKYY>SKYY</a></td>
+                        <td class="text-end">76.02</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.43%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.11%</a></td>
+                        <td class="Display_PCT text-end">3.64%</a></td>
+                        <td id="SKYY_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SKYY_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">6.46%</a></td>
+                        <td class="Display_PCT text-end">31.96%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Mobile Payment</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/IPAY>IPAY</a></td>
+                        <td class="text-end">42.94</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.35%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.56%</a></td>
+                        <td class="Display_PCT text-end">2.05%</a></td>
+                        <td id="IPAY_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/IPAY_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">5.23%</a></td>
+                        <td class="Display_PCT text-end">9.38%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Fintech</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/FINX>FINX</a></td>
+                        <td class="text-end">22.44</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.72%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.68%</a></td>
+                        <td class="Display_PCT text-end">5.70%</a></td>
+                        <td id="FINX_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/FINX_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-0.73%</a></td>
+                        <td class="Display_PCT text-end">16.84%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Exponential Tech</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XT>XT</a></td>
+                        <td class="text-end">55.47</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.59%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.23%</a></td>
+                        <td class="Display_PCT text-end">2.87%</a></td>
+                        <td id="XT_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XT_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">11.99%</a></td>
+                        <td class="Display_PCT text-end">17.48%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Disruptive Innovation</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/ARKK>ARKK</a></td>
+                        <td class="text-end">45.37</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.75%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.79%</a></td>
+                        <td class="Display_PCT text-end">7.38%</a></td>
+                        <td id="ARKK_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/ARKK_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-3.12%</a></td>
+                        <td class="Display_PCT text-end">45.23%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Robotics & A.I.</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/BOTZ>BOTZ</a></td>
+                        <td class="text-end">28.57</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.28%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.59%</a></td>
+                        <td class="Display_PCT text-end">2.23%</a></td>
+                        <td id="BOTZ_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/BOTZ_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">34.26%</a></td>
+                        <td class="Display_PCT text-end">39.29%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Agribusiness</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/MOO>MOO</a></td>
+                        <td class="text-end">81.54</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.74%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.23%</a></td>
+                        <td class="Display_PCT text-end">0.84%</a></td>
+                        <td id="MOO_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/MOO_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-3.33%</a></td>
+                        <td class="Display_PCT text-end">-5.01%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Genomeic Revolution</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/ARKG>ARKG</a></td>
+                        <td class="text-end">34.87</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.19%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.29%</a></td>
+                        <td class="Display_PCT text-end">2.86%</a></td>
+                        <td id="ARKG_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/ARKG_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-7.38%</a></td>
+                        <td class="Display_PCT text-end">23.52%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Marijuana</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/MJ>MJ</a></td>
+                        <td class="text-end">3.18</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.62%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.35%</a></td>
+                        <td class="Display_PCT text-end">3.94%</a></td>
+                        <td id="MJ_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/MJ_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-46.17%</a></td>
+                        <td class="Display_PCT text-end">-24.61%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Nex Gen. Internet</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/ARKW>ARKW</a></td>
+                        <td class="text-end">60.41</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.44%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.07%</a></td>
+                        <td class="Display_PCT text-end">11.40%</a></td>
+                        <td id="ARKW_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/ARKW_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">8.09%</a></td>
+                        <td class="Display_PCT text-end">56.71%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Autonomous Tech</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/ARKQ>ARKQ</a></td>
+                        <td class="text-end">56.57</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.43%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.37%</a></td>
+                        <td class="Display_PCT text-end">6.80%</a></td>
+                        <td id="ARKQ_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/ARKQ_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">8.02%</a></td>
+                        <td class="Display_PCT text-end">37.94%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Clean Energy</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/PBW>PBW</a></td>
+                        <td class="text-end">42.31</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.90%</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.46%</a></td>
+                        <td class="Display_PCT text-end">8.28%</a></td>
+                        <td id="PBW_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/PBW_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-8.96%</a></td>
+                        <td class="Display_PCT text-end">12.49%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Blockchain Tech</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/BLOK>BLOK</a></td>
+                        <td class="text-end">24.89</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.06%</a>
+                        </td>
+                        <td class="Display_PCT text-end">9.41%</a></td>
+                        <td class="Display_PCT text-end">23.77%</a></td>
+                        <td id="BLOK_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/BLOK_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">25.71%</a></td>
+                        <td class="Display_PCT text-end">64.62%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>IOT</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/SNSR>SNSR</a></td>
+                        <td class="text-end">34.33</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.60%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.74%</a></td>
+                        <td class="Display_PCT text-end">2.52%</a></td>
+                        <td id="SNSR_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SNSR_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">31.80%</a></td>
+                        <td class="Display_PCT text-end">19.15%</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+
+
+           
+        </div>
+
+        <div>
+        <table class="table table-hover table-sm table-borderless .table-responsive"
+                style="width: 840px; border:2px solid;margin:0px 0px;">
+                <thead>
+                    <tr>
+                        <th class="table-dark" style="width:20%">Industry</th>
+                        <th style="width:20%">Code</th>
+                        <th class="text-end" style="width:10%">Last</th>
+                        <th class="text-end" style="width:10%">Change%</th>
+                        <th class="text-end" style="width:10%">Week%</th>
+                        <th class="text-end" style="width:10%">Mon%</th>
+                        <th style="width:20%">Quater</th>
+                        <th class="text-end" style="width:10%">Year%</th>
+                        <th class="text-end" style="width:10%">Ytd%</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                    <tr>
+                        <td>Technology</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XLK>XLK</a></td>
+                        <td class="text-end">171.66</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.26%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.27%</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.26%</a>
+                        </td>
+                        <td id="XLK_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XLK_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">30.50%</a>
+                        </td>
+                        <td class="Display_PCT text-end">38.54%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>I.T.</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/VGT>VGT</a></td>
+                        <td class="text-end">437.23</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.40%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.11%</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.21%</a>
+                        </td>
+                        <td id="VGT_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/VGT_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">28.83%</a>
+                        </td>
+                        <td class="Display_PCT text-end">37.38%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Internet</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/FDN>FDN</a></td>
+                        <td class="text-end">163.44</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.03%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.28%</a>
+                        </td>
+                        <td class="Display_PCT text-end">4.50%</a>
+                        </td>
+                        <td id="FDN_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/FDN_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">18.33%</a>
+                        </td>
+                        <td class="Display_PCT text-end">32.72%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Socail Media</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/SOCL>SOCL</a></td>
+                        <td class="text-end">37.21</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.81%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.69%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.36%</a>
+                        </td>
+                        <td id="SOCL_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SOCL_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">7.29%</a>
+                        </td>
+                        <td class="Display_PCT text-end">20.65%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Software & SaaS</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/IGV>IGV</a></td>
+                        <td class="text-end">345.61</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.73%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.09%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.01%</a>
+                        </td>
+                        <td id="IGV_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/IGV_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">20.36%</a>
+                        </td>
+                        <td class="Display_PCT text-end">35.09%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Semicodunctors</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/SOXX>SOXX</a></td>
+                        <td class="text-end">504.65</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.08%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.51%</a>
+                        </td>
+                        <td class="Display_PCT text-end">4.99%</a>
+                        </td>
+                        <td id="SOXX_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/SOXX_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">43.14%</a>
+                        </td>
+                        <td class="Display_PCT text-end">45.58%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>Financial</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XLF>XLF</a></td>
+                        <td class="text-end">33.74</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.45%</a></td>
+                        <td class="Display_PCT text-end">0.09%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.17%</a>
+                        </td>
+                        <td id="XLF_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XLF_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">7.16%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.41%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Banks</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/KBE>KBE</a></td>
+                        <td class="text-end">36.63</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.77%</a></td>
+                        <td class="Display_PCT text-end">1.75%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-3.41%</a>
+                        </td>
+                        <td id="KBE_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/KBE_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-15.97%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-17.60%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Insurance</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/KIE>KIE</a></td>
+                        <td class="text-end">40.92</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.32%</a></td>
+                        <td class="Display_PCT text-end">0.10%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.10%</a>
+                        </td>
+                        <td id="KIE_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/KIE_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">8.99%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.65%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Brokers</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/IAI>IAI</a></td>
+                        <td class="text-end">90.0</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.35%</a></td>
+                        <td class="Display_PCT text-end">-0.83%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.98%</a>
+                        </td>
+                        <td id="IAI_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/IAI_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">7.51%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-5.40%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>Healthcare</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XLV>XLV</a></td>
+                        <td class="text-end">130.02</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.79%</a></td>
+                        <td class="Display_PCT text-end">-2.04%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.06%</a>
+                        </td>
+                        <td id="XLV_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XLV_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">1.36%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-3.52%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Biotech</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/IBB>IBB</a></td>
+                        <td class="text-end">126.65</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.83%</a></td>
+                        <td class="Display_PCT text-end">-0.24%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.69%</a>
+                        </td>
+                        <td id="IBB_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/IBB_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">0.93%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-3.48%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Mediacal Devices</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/IHI>IHI</a></td>
+                        <td class="text-end">55.73</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.29%</a></td>
+                        <td class="Display_PCT text-end">-1.29%</a>
+                        </td>
+                        <td class="Display_PCT text-end">4.36%</a>
+                        </td>
+                        <td id="IHI_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/IHI_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">8.28%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.16%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Healthcare Providers</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/IHF>IHF</a></td>
+                        <td class="text-end">251.27</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.03%</a></td>
+                        <td class="Display_PCT text-end">-1.77%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.40%</a>
+                        </td>
+                        <td id="IHF_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/IHF_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-3.53%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-5.90%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Pharmaceuticals</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XPH>XPH</a></td>
+                        <td class="text-end">40.67</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.07%</a></td>
+                        <td class="Display_PCT text-end">-0.78%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.51%</a>
+                        </td>
+                        <td id="XPH_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XPH_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-6.72%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.11%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>Cosumer Disc.</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XLY>XLY</a></td>
+                        <td class="text-end">169.89</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.31%</a></td>
+                        <td class="Display_PCT text-end">0.05%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.72%</a>
+                        </td>
+                        <td id="XLY_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XLY_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">17.24%</a>
+                        </td>
+                        <td class="Display_PCT text-end">32.20%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Home Builders</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XHB>XHB</a></td>
+                        <td class="text-end">80.16</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.84%</a></td>
+                        <td class="Display_PCT text-end">-0.17%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.75%</a>
+                        </td>
+                        <td id="XHB_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XHB_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">38.74%</a>
+                        </td>
+                        <td class="Display_PCT text-end">33.58%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Retail</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XRT>XRT</a></td>
+                        <td class="text-end">65.05</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.85%</a></td>
+                        <td class="Display_PCT text-end">2.04%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.04%</a>
+                        </td>
+                        <td id="XRT_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XRT_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">7.91%</a>
+                        </td>
+                        <td class="Display_PCT text-end">8.51%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Consumer Staples</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XLP>XLP</a></td>
+                        <td class="text-end">73.44</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.03%</a></td>
+                        <td class="Display_PCT text-end">-0.98%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.69%</a>
+                        </td>
+                        <td id="XLP_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XLP_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">3.16%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.31%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>Cosumer Disc.</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XLY>XLY</a></td>
+                        <td class="text-end">169.89</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.31%</a></td>
+                        <td class="Display_PCT text-end">0.05%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.72%</a>
+                        </td>
+                        <td id="XLY_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XLY_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">17.24%</a>
+                        </td>
+                        <td class="Display_PCT text-end">32.20%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Home Builders</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XHB>XHB</a></td>
+                        <td class="text-end">80.16</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.84%</a></td>
+                        <td class="Display_PCT text-end">-0.17%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.75%</a>
+                        </td>
+                        <td id="XHB_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XHB_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">38.74%</a>
+                        </td>
+                        <td class="Display_PCT text-end">33.58%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Retail</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XRT>XRT</a></td>
+                        <td class="text-end">65.05</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.85%</a></td>
+                        <td class="Display_PCT text-end">2.04%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.04%</a>
+                        </td>
+                        <td id="XRT_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XRT_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">7.91%</a>
+                        </td>
+                        <td class="Display_PCT text-end">8.51%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Consumer Staples</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XLP>XLP</a></td>
+                        <td class="text-end">73.44</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.03%</a></td>
+                        <td class="Display_PCT text-end">-0.98%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.69%</a>
+                        </td>
+                        <td id="XLP_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XLP_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">3.16%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.31%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>Industrials</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XLI>XLI</a></td>
+                        <td class="text-end">107.71</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.42%</a></td>
+                        <td class="Display_PCT text-end">0.36%</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.51%</a>
+                        </td>
+                        <td id="XLI_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XLI_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">24.14%</a>
+                        </td>
+                        <td class="Display_PCT text-end">10.56%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Aero & Defence</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/ITA>ITA</a></td>
+                        <td class="text-end">116.75</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.61%</a></td>
+                        <td class="Display_PCT text-end">0.07%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.95%</a>
+                        </td>
+                        <td id="ITA_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/ITA_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">18.93%</a>
+                        </td>
+                        <td class="Display_PCT text-end">4.86%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Transpotation</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/IYT>IYT</a></td>
+                        <td class="text-end">252.29</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.98%</a></td>
+                        <td class="Display_PCT text-end">0.99%</a>
+                        </td>
+                        <td class="Display_PCT text-end">8.65%</a>
+                        </td>
+                        <td id="IYT_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/IYT_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">17.77%</a>
+                        </td>
+                        <td class="Display_PCT text-end">18.93%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Global Jets</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/JETS>JETS</a></td>
+                        <td class="text-end">22.04</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.66%</a></td>
+                        <td class="Display_PCT text-end">2.89%</a>
+                        </td>
+                        <td class="Display_PCT text-end">14.85%</a>
+                        </td>
+                        <td id="JETS_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/JETS_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">30.96%</a>
+                        </td>
+                        <td class="Display_PCT text-end">29.04%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>Energy</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XLE>XLE</a></td>
+                        <td class="text-end">81.42</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.78%</a></td>
+                        <td class="Display_PCT text-end">0.31%</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.01%</a>
+                        </td>
+                        <td id="XLE_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XLE_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">19.42%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-5.12%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Oil &Gas Explorator</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XOP>XOP</a></td>
+                        <td class="text-end">129.81</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.85%</a></td>
+                        <td class="Display_PCT text-end">0.76%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.22%</a>
+                        </td>
+                        <td id="XOP_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XOP_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">12.64%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-3.05%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Oil Service</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/OIH>OIH</a></td>
+                        <td class="text-end">310.49</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.91%</a></td>
+                        <td class="Display_PCT text-end">7.96%</a>
+                        </td>
+                        <td class="Display_PCT text-end">11.20%</a>
+                        </td>
+                        <td id="OIH_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/OIH_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">41.55%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.12%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Solar</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/TAN>TAN</a></td>
+                        <td class="text-end">69.37</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.94%</a></td>
+                        <td class="Display_PCT text-end">-2.87%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.32%</a>
+                        </td>
+                        <td id="TAN_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/TAN_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-7.53%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-4.89%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Nuclear</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/URA>URA</a></td>
+                        <td class="text-end">21.14</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.34%</a></td>
+                        <td class="Display_PCT text-end">-2.58%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.08%</a>
+                        </td>
+                        <td id="URA_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/URA_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">10.84%</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.28%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>Materials</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XLB>XLB</a></td>
+                        <td class="text-end">81.22</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.02%</a></td>
+                        <td class="Display_PCT text-end">-1.99%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.09%</a>
+                        </td>
+                        <td id="XLB_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XLB_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">12.52%</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.53%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Gold Miners</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/GDX>GDX</a></td>
+                        <td class="text-end">30.04</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.00%</a></td>
+                        <td class="Display_PCT text-end">-0.23%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-3.25%</a>
+                        </td>
+                        <td id="GDX_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/GDX_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">12.48%</a>
+                        </td>
+                        <td class="Display_PCT text-end">4.82%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Metals & Mining</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XME>XME</a></td>
+                        <td class="text-end">51.12</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.17%</a></td>
+                        <td class="Display_PCT text-end">0.59%</a>
+                        </td>
+                        <td class="Display_PCT text-end">4.97%</a>
+                        </td>
+                        <td id="XME_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XME_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">20.14%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.32%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Lithium & Battery</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/LIT>LIT</a></td>
+                        <td class="text-end">67.49</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.14%</a></td>
+                        <td class="Display_PCT text-end">3.80%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.26%</a>
+                        </td>
+                        <td id="LIT_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/LIT_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-9.05%</a>
+                        </td>
+                        <td class="Display_PCT text-end">15.53%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Rare Earth</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/REMX>REMX</a></td>
+                        <td class="text-end">85.4</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.05%</a></td>
+                        <td class="Display_PCT text-end">2.69%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.50%</a>
+                        </td>
+                        <td id="REMX_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/REMX_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">2.07%</a>
+                        </td>
+                        <td class="Display_PCT text-end">12.13%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Basic Materials</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/IYM>IYM</a></td>
+                        <td class="text-end">131.43</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.25%</a></td>
+                        <td class="Display_PCT text-end">-1.22%</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.52%</a>
+                        </td>
+                        <td id="IYM_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/IYM_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">14.46%</a>
+                        </td>
+                        <td class="Display_PCT text-end">6.16%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>Real Estate</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XLRE>XLRE</a></td>
+                        <td class="text-end">37.92</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.34%</a></td>
+                        <td class="Display_PCT text-end">0.61%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.98%</a>
+                        </td>
+                        <td id="XLRE_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XLRE_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-5.00%</a>
+                        </td>
+                        <td class="Display_PCT text-end">4.41%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>REIT US</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/VNQ>VNQ</a></td>
+                        <td class="text-end">84.09</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.43%</a></td>
+                        <td class="Display_PCT text-end">0.63%</a>
+                        </td>
+                        <td class="Display_PCT text-end">1.62%</a>
+                        </td>
+                        <td id="VNQ_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/VNQ_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-4.88%</a>
+                        </td>
+                        <td class="Display_PCT text-end">4.14%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>REIT Global ex. US</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/VNQI>VNQI</a></td>
+                        <td class="text-end">40.28</a>
+                        </td>
+                        <td class="Display_PCT text-end">0.17%</a></td>
+                        <td class="Display_PCT text-end">0.22%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.03%</a>
+                        </td>
+                        <td id="VNQI_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/VNQI_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-8.27%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-2.56%</a>
+                        </td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Mortgage</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/REM>REM</a></td>
+                        <td class="text-end">23.61</a>
+                        </td>
+                        <td class="Display_PCT text-end">2.03%</a></td>
+                        <td class="Display_PCT text-end">0.04%</a>
+                        </td>
+                        <td class="Display_PCT text-end">5.17%</a>
+                        </td>
+                        <td id="REM_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/REM_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-5.03%</a>
+                        </td>
+                        <td class="Display_PCT text-end">7.39%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>Communications</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XLC>XLC</a></td>
+                        <td class="text-end">64.88</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.26%</a></td>
+                        <td class="Display_PCT text-end">-0.31%</a>
+                        </td>
+                        <td class="Display_PCT text-end">3.36%</a>
+                        </td>
+                        <td id="XLC_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XLC_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">14.89%</a>
+                        </td>
+                        <td class="Display_PCT text-end">35.78%</a>
+                        </td>
+                    </tr>
+                    
+
+                    <!-- splitter -->
+                    <tr >
+                        <td style="border: 1px solid; padding:0px 0px;" colspan="9">
+                        </td>
+                    </tr>             
+                    
+                    <tr>
+                        <td>Utilities</td>
+                        <td class="fw-bold"><a href=https://finance.yahoo.com/quote/XLU>XLU</a></td>
+                        <td class="text-end">65.11</a>
+                        </td>
+                        <td class="Display_PCT text-end">-0.43%</a></td>
+                        <td class="Display_PCT text-end">-0.50%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-1.29%</a>
+                        </td>
+                        <td id="XLU_Quater" style="width: 120; margin:0px 0px;padding:0px 0px"><img
+                                decoding="async" src="Img/XLU_Quater.png" width="120" height="20"></td>
+                        <td class="Display_PCT text-end">-4.20%</a>
+                        </td>
+                        <td class="Display_PCT text-end">-6.22%</a>
+                        </td>
+                    </tr>
+                    
+
+                </tbody>
+            </table>
+
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var BullColor = "#37b38a";
+        var BearColor = "#ef5350";
+
+        function GetColorByPercent(percent) {
+            var p = 0
+            if (percent > 3 || percent < -3)
+                p = 100;
+            else
+                p = percent / 3;
+
+            if (p < 0)
+                return GetColorRgba(BearColor, Math.abs(p));
+            else
+                return GetColorRgba(BullColor, p);
+        }
+
+        /**
+        * JS颜色十六进制转换为rgb或rgba,返回的格式为 rgba（255，255，255，0.5）字符串
+        * sHex为传入的十六进制的色值
+        * alpha为rgba的透明度
+        */
+        function GetColorRgba(sHex, alpha) {
+            // 十六进制颜色值的正则表达式
+            var reg = /^#([0-9a-fA-f]{3}|[0-9a-fA-f]{6})$/
+            /* 16进制颜色转为RGB格式 */
+            let sColor = sHex.toLowerCase()
+            if (sColor && reg.test(sColor)) {
+                if (sColor.length === 4) {
+                    var sColorNew = '#'
+                    for (let i = 1; i < 4; i += 1) {
+                        sColorNew += sColor.slice(i, i + 1).concat(sColor.slice(i, i + 1))
+                    }
+                    sColor = sColorNew
+                }
+                // 处理六位的颜色值
+                var sColorChange = []
+                for (let i = 1; i < 7; i += 2) {
+                    sColorChange.push(parseInt('0x' + sColor.slice(i, i + 2)))
+                }
+                // return sColorChange.join(',')
+                return 'rgba(' + sColorChange.join(',') + ',' + alpha + ')'
+            }
+            else {
+                return sColor
+            }
+        }
+
+
+        let arr = document.getElementsByClassName("Display_PCT");
+
+        //    定义两个更改颜色的函数fun1和fun2
+        function fun1() {
+            //        遍历所有元素对象
+            for (let i = 0; i < arr.length; i++) {
+                //            更改背景颜色
+                var value = parseFloat(arr[i].innerHTML)
+
+                arr[i].style.backgroundColor = GetColorByPercent(value);
+            }
+        }
+        fun1();
+
+
+    </script>
+</body>
+
+</html>
