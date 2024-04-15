@@ -25,6 +25,10 @@
         var year = today.getFullYear();
         var month = today.getMonth() + 1;
         var day = today.getDate();
+
+        // 取昨天的日期
+        day -= 1;
+
         // 将today格式化成年月日 yyyy-mm-dd
         // Ensure month and day are two digits
         month = month < 10 ? '0' + month : month;
