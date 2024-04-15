@@ -13,6 +13,8 @@
 
     <script language="javascript" type="text/javascript">
         var today = new Date();
+        // today 取昨天的日期
+        today.setDate(today.getDate() - 1);
 
         // 判断是否是周末，如果是周末，取上一个交易日
         var dayOfWeek = today.getDay();
@@ -25,9 +27,6 @@
         var year = today.getFullYear();
         var month = today.getMonth() + 1;
         var day = today.getDate();
-
-        // 取昨天的日期
-        day -= 1;
 
         // 将today格式化成年月日 yyyy-mm-dd
         // Ensure month and day are two digits
